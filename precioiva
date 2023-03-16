@@ -1,0 +1,18 @@
+package com.company;
+
+public class devuelveIva {
+
+
+        public static double calcularPrecioConIVA(double precioSinIVA) {
+            double iva = 0.19; // Suponemos un IVA del 19%
+            double precioConIVA = precioSinIVA * (1 + iva);
+            return precioConIVA;
+        }
+    public static void main(String[] args) {
+
+        double precioSinIVA = 100.0; // Suponemos un precio sin IVA de 100 PEsos
+        double precioConIVA = calcularPrecioConIVA(precioSinIVA);
+        System.out.println("El precio con IVA incluido es: " + precioConIVA + " pesos");
+
+    }
+
